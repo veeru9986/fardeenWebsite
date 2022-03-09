@@ -10,6 +10,10 @@ export const Wrapper = styled.div`
   margin-top: 2rem;
   place-items: center;
   overflow: hidden;
+
+  @media (max-width: 991px) {
+    grid-template-columns: 5% 1fr 5%;
+  }
 `;
 
 export const LinkStyled = styled(Link)`
