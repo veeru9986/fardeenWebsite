@@ -3,7 +3,7 @@ import { createGlobalStyle } from "styled-components";
 const GlobalStyles = createGlobalStyle`
 
 :root {
-    --family: "proxima-nova" !important;
+    --family: "Roboto" !important;
     --heavyWeight: 800;
     --xheavyWeight: 700;
     --mediumWeight: 600;
@@ -13,7 +13,7 @@ const GlobalStyles = createGlobalStyle`
     --transMed: 0.3s;
     --transSlow: 0.5s;
     --lightBlue: #8CD1FF;
-    --medBlue: #0071BC;
+    --medBlue: #77c063;
     --darkBlue: #005187;
     --lightPink: #EB9B9E;
     --lightRed : #C1272D;
@@ -74,7 +74,7 @@ html{
   scroll-behavior: smooth;
 }
 body {
-  font-family: "proxima-nova";
+  font-family: "Roboto";
    margin: 0;
    padding: 0;
 }

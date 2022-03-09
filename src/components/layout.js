@@ -10,7 +10,16 @@ function Layout({ children, location }) {
   return (
     <>
       <Helmet>
-        <link rel="stylesheet" href="https://use.typekit.net/bbd4cpa.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin=""
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=none"
+          rel="stylesheet"
+        />
       </Helmet>
       <GlobalStyles />
       <TypographyStyles />

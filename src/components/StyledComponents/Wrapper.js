@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 
 export const Wrapper = styled.div`
   display: grid;
-  grid-template-columns: 5% 1fr 5%;
+  grid-template-columns: 15% 1fr 15%;
   grid-template-rows: auto;
   width: 100%;
   height: auto;

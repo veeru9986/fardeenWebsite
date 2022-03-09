@@ -144,7 +144,8 @@ function Footer() {
   return (
     <FooterWrapper>
       <Container>
-        <div className="grid-1">
+        <h2>footer</h2>
+        {/* <div className="grid-1">
           <div className="grid-1-1">
             <div className="logo">
               <Logo />
@@ -202,7 +203,7 @@ function Footer() {
               </h6>
             </div>
           </div>
-        </div>
+        </div> */}
       </Container>
     </FooterWrapper>
   );

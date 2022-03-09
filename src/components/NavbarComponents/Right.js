@@ -69,39 +69,22 @@ const UL = styled.ul`
   }
 `;
 
-const Right = ({ open, setOpen, data }) => {
-  console.log(data[0].title);
+const Right = ({ open, setOpen }) => {
   return (
     <>
       <UL open={open}>
-        {data.map((n) => (
+        {mainMenuItems.map((n) => (
           <li key={n.id}>
             <Link
               className="menu-links"
               activeClassName="menu-links-active"
-              to={n.link_to}
+              to={n.path}
               onClick={() => setOpen(!open)}
             >
               {n.title}
             </Link>
           </li>
         ))}
-
-        <li>
-          <LinkStyled to="/sign-in" onClick={() => setOpen(!open)}>
-            Sign in
-          </LinkStyled>
-        </li>
-        <li>
-          <Link
-            to="/cart"
-            activeClassName="cart-active"
-            onClick={() => setOpen(!open)}
-            className="cart"
-          >
-            <Cart />
-          </Link>
-        </li>
       </UL>
     </>
   );

@@ -1,13 +1,12 @@
 import React from "react";
 import styled from "styled-components";
-import Logo from "../assets/main-logo.svg";
+import Logo from "../images/Untitled design.png";
 import Burger from "./NavbarComponents/Burger";
 import { Link } from "gatsby";
-import { useStaticQuery, graphql } from "gatsby";
 
 const Wrapper = styled.div`
   display: grid;
-  grid-template-columns: 5% 1fr 5%;
+  grid-template-columns: 15% 1fr 15%;
   grid-template-rows: auto;
   width: 100%;
   height: auto;
@@ -40,26 +39,13 @@ const Nav = styled.nav`
         width: 90px;
       }
     }
+    img{
+      width: 150px;
+    }
   }
 `;
 
 function Navbar(props) {
-  const data = useStaticQuery(graphql`
-    {
-      strapiNavbar {
-        data {
-          attributes {
-            navbar {
-              id
-              link_to
-              title
-            }
-          }
-        }
-      }
-    }
-  `);
-  
   // console.log(data.strapiNavbar.data.attributes.navbar);
 
   return (
@@ -67,10 +53,10 @@ function Navbar(props) {
       <Nav>
         <div className="logo">
           <Link to="/" style={{ display: "flex" }}>
-            <Logo />
+             <img src={Logo} alt="logo" />
           </Link>
         </div>
-        <Burger data={data.strapiNavbar.data.attributes.navbar} />
+        <Burger />
       </Nav>
     </Wrapper>
   );
