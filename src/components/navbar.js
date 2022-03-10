@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Logo from "../images/Untitled design.png";
+import Logo from "../assets/opel-2.svg";
 import Burger from "./NavbarComponents/Burger";
 import { Link } from "gatsby";
 
@@ -35,12 +35,10 @@ const Nav = styled.nav`
     z-index: 11;
     svg {
       width: 120px;
+      height: 120px;
       @media (max-width: 479px) {
         width: 90px;
       }
-    }
-    img{
-      width: 150px;
     }
   }
 `;
@@ -53,7 +51,7 @@ function Navbar(props) {
       <Nav>
         <div className="logo">
           <Link to="/" style={{ display: "flex" }}>
-             <img src={Logo} alt="logo" />
+            <Logo />
           </Link>
         </div>
         <Burger />

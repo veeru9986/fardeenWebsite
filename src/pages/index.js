@@ -1,18 +1,23 @@
 import React from "react";
 import styled from "styled-components";
+import Banner from "../components/Banner";
+import BookTaxi from "../components/BookTaxi";
 // import Seo from "../components/Seo/Seo";
 import { Wrapper } from "../components/StyledComponents/Wrapper";
+import WhyChooseUs from "../components/WhyChooseUs";
 
 const Container = styled.div`
   margin-top: var(--mt);
+  grid-area: auto/1/auto/4;
+  width: 100%;
+  @media (min-width: 1700px) {
+    width: 80%;
+  }
+`;
+const Container1 = styled.div`
+  margin-top: var(--mt);
   grid-area: auto/2/auto/3;
   width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #77c063;
-
   @media (min-width: 1700px) {
     width: 80%;
   }
@@ -22,8 +27,12 @@ function Index({ location }) {
   return (
     <Wrapper>
       <Container>
-        <h2>Coming Soon...</h2>
+        <Banner />
       </Container>
+      <Container1>
+        <BookTaxi />
+        <WhyChooseUs />
+      </Container1>
     </Wrapper>
   );
 }

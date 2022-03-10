@@ -13,7 +13,7 @@ const GlobalStyles = createGlobalStyle`
     --transMed: 0.3s;
     --transSlow: 0.5s;
     --lightBlue: #8CD1FF;
-    --medBlue: #77c063;
+    --medGreen: #77c063;
     --darkBlue: #005187;
     --lightPink: #EB9B9E;
     --lightRed : #C1272D;
