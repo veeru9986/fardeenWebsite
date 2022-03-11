@@ -43,7 +43,7 @@ const data = [
 
 const Wrapper = styled.div`
   width: 100%;
-  
+
   span {
     font-size: var(--p2);
     color: #888888;
@@ -60,11 +60,17 @@ const Wrapper = styled.div`
     align-items: center;
     padding-bottom: 1rem;
     margin: 1rem 0;
+    @media (max-width: 1200px) {
+      grid-template-columns: 100px 1fr 100px 100px 50px;
+    }
     @media (max-width: 767px) {
       grid-template-columns: minmax(100px, auto) 1fr minmax(100px, auto) auto;
     }
-    @media (max-width: 600px) {
-      grid-template-columns: minmax(50px, auto) 1fr minmax(50px, auto) auto;
+ 
+  }
+  .types {
+    @media (max-width: 767px) {
+      display: none;
     }
   }
   .btn-book-now {
@@ -90,6 +96,27 @@ const Wrapper = styled.div`
   .basic-fare {
   }
 
+  @media (max-width: 680px) {
+    .tb-body {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      border-bottom: 1px solid #000;
+    }
+    .btn-book-now {
+      order: 1;
+    }
+    .vechile-type {
+      align-items: center;
+    }
+    .luggage-type {
+      margin: 0.5rem 0;
+    }
+    .toll-fee, .basic-fare {
+      margin-bottom: 0.5rem;
+    }
+
+  }
 `;
 
 const Button1 = styled(ButtonStyled)`
@@ -101,7 +128,7 @@ function BookTaxi() {
   return (
     <Wrapper>
       <Heading title="book taxi online" desc="save time & money" />
-  
+
       <div className="car-types types">
         <span>Select</span>
         <span>Vechile</span>

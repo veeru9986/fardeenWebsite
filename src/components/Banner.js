@@ -67,7 +67,7 @@ function Banner() {
       </div>
       <div className="contact-us">
         <h1>Call us 24/7</h1>
-        <span>080-080-080-08</span>
+        <span>+918123899691</span>
         <div className="btn-contact">
           <ButtonStyled primary>CONTACT</ButtonStyled>
         </div>
