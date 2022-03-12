@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Banner from "../components/Banner";
+import BenefitsSlider from "../components/BenefitsSlider";
 import BookTaxi from "../components/BookTaxi";
 // import Seo from "../components/Seo/Seo";
 import { Wrapper } from "../components/StyledComponents/Wrapper";
@@ -27,7 +28,7 @@ function Index({ location }) {
   return (
     <Wrapper>
       <Container>
-        <Banner />
+        <BenefitsSlider />
       </Container>
       <Container1>
         <BookTaxi />

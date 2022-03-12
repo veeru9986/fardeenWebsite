@@ -11,6 +11,10 @@ const Wrapper = styled.div`
   width: 100%;
   height: auto;
 
+  @media (max-width: 767px) {
+    grid-template-columns: 5% 1fr 5%;
+  }
+
   margin-top: ${({ positionS }) => (positionS ? "2rem" : "0")};
   place-items: center;
   position: ${({ positionS }) => (positionS ? "none" : "absolute")};
