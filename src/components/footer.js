@@ -18,8 +18,9 @@ const Container = styled.div`
     justify-content: center;
     align-items: center;
     width: 100%;
+    flex-direction: column;
 
-  h4{
+  h4, h5{
     color: #ffffff;
   }
   span{
@@ -38,6 +39,7 @@ function Footer() {
         <h4>
           © 2022 <span>GSA TRAVELS </span>, All Rights Reserved
         </h4>
+        <h5>Contact us: <span>+918123899691</span></h5>
       </Container>
     </FooterWrapper>
   );
