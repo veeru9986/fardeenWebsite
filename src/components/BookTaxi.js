@@ -2,42 +2,26 @@ import React from "react";
 import styled from "styled-components";
 import Heading from "./Heading";
 import { ButtonStyled } from "./StyledComponents/Wrapper";
+import ReactWhatsapp from "react-whatsapp";
 
 const data = [
   {
-    name: "hatchback",
+    name: "Innova",
     seats: "4 seats",
-    luggage: "2 suitcases max",
     tollFee: 0,
-    basicFare: 899,
+    basicFare: "Prices depend on distance",
   },
   {
-    name: "sedan prime",
+    name: "Innova Crysta",
     seats: "4 seats",
-    luggage: "2 suitcases max",
     tollFee: 0,
-    basicFare: 899,
+    basicFare: "Prices depend on distance",
   },
   {
-    name: "swift dzire",
+    name: "Sedan",
     seats: "4 seats",
-    luggage: "2 suitcases max",
     tollFee: 0,
-    basicFare: 899,
-  },
-  {
-    name: "mahindra verito",
-    seats: "4 seats",
-    luggage: "2 suitcases max",
-    tollFee: 0,
-    basicFare: 899,
-  },
-  {
-    name: "mahindra verito A/C",
-    seats: "4 seats",
-    luggage: "2 suitcases max",
-    tollFee: 0,
-    basicFare: 899,
+    basicFare: "Prices depend on distance",
   },
 ];
 
@@ -55,18 +39,17 @@ const Wrapper = styled.div`
   .car-types,
   .car-table-body {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
     grid-column-gap: 1.5rem;
     align-items: center;
     padding-bottom: 1rem;
     margin: 1rem 0;
     @media (max-width: 1200px) {
-      grid-template-columns: 100px 1fr 100px 100px 50px;
+      grid-template-columns: 100px 1fr 100px 50px;
     }
     @media (max-width: 767px) {
       grid-template-columns: minmax(100px, auto) 1fr minmax(100px, auto) auto;
     }
- 
   }
   .types {
     @media (max-width: 767px) {
@@ -112,16 +95,37 @@ const Wrapper = styled.div`
     .luggage-type {
       margin: 0.5rem 0;
     }
-    .toll-fee, .basic-fare {
+    .toll-fee,
+    .basic-fare {
       margin-bottom: 0.5rem;
     }
-
   }
 `;
 
-const Button1 = styled(ButtonStyled)`
+const Button1 = styled(ReactWhatsapp)`
   min-width: auto !important;
   padding: 10px 10px;
+  border: 2px solid;
+  color: ${(props) => (props.primary ? "#fff" : `#000`)};
+  border-color: ${(props) =>
+    props.primary ? "transparent" : "var(--medGreen)"};
+  background-color: ${(props) => (props.primary ? "var(--medGreen)" : `#fff`)};
+  outline: none;
+  font-size: 14px;
+  font-weight: var(--mediumWeight);
+  border-radius: 66px;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    background-color: ${(props) =>
+      props.primary ? "#fff" : "var(--medGreen)"};
+    border-color: ${(props) => (props.primary ? "var(--medGreen)" : "none")};
+    color: ${(props) => (props.primary ? "#000" : "#fff")};
+  }
 `;
 
 function BookTaxi() {
@@ -132,7 +136,7 @@ function BookTaxi() {
       <div className="car-types types">
         <span>Select</span>
         <span>Vechile</span>
-        <span>Luggage</span>
+        {/* <span>Luggage</span> */}
         <span>TollFee</span>
         <span>Basic Fare</span>
       </div>
@@ -141,7 +145,9 @@ function BookTaxi() {
           return (
             <div className="car-table-body tb-body" key={id}>
               <div className="btn-book-now">
-                <Button1>Book Now</Button1>
+                <Button1 number="+918123899691" message="Book Now">
+                  Book Now
+                </Button1>
               </div>
               <div className="vechile-type">
                 <div className="image" />
@@ -150,9 +156,9 @@ function BookTaxi() {
                   <h4>{d.seats}</h4>
                 </div>
               </div>
-              <div className="luggage-type">
+              {/* <div className="luggage-type">
                 <span>2{d.luggage}</span>
-              </div>
+              </div> */}
               <div className="toll-fee">
                 <span>₹ {d.tollFee}</span>
               </div>

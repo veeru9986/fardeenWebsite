@@ -6,9 +6,8 @@ import labtest from "../images/lab.jpg";
 import chemlab from "../images/chemlab.jpg";
 import { GatsbyImage } from "gatsby-plugin-image";
 import { useForm } from "react-hook-form";
-import backgroundP from "../images/taxib.jpg";
-import backgroundP1 from "../images/taxib1.jpg";
-
+import airport1 from "../images/airport1.jpg";
+import airport2 from "../images/airport2.jpg";
 
 const Container = styled.div`
   margin-bottom: 2rem;
@@ -54,13 +53,10 @@ function BenefitsSlider({ data }) {
     <Container>
       <Slider {...settings}>
         <div className="image-wrapper">
-          <img src={backgroundP} alt="" />
+          <img src={airport1} alt="" />
         </div>
         <div className="image-wrapper">
-          <img src={backgroundP1} alt="" />
-        </div>
-        <div className="image-wrapper">
-          <img src={backgroundP} alt="" />
+          <img src={airport2} alt="" />
         </div>
       </Slider>
     </Container>

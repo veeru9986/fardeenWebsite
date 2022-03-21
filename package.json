@@ -40,6 +40,7 @@
     "react-markdown": "^8.0.0",
     "react-redux": "^7.2.6",
     "react-slick": "^0.28.1",
+    "react-whatsapp": "^0.2.1",
     "slick-carousel": "^1.8.1",
     "styled-components": "^5.3.3"
   }
