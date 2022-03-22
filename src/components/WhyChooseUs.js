@@ -21,6 +21,7 @@ const Wrapper = styled.div`
     height: 50px;
     border-radius: 50%;
     background-color: #c4c4c4;
+    margin-bottom: 1rem;
   }
 `;
 
@@ -32,50 +33,70 @@ function WhyChooseUs() {
         <div className="section">
           <div className="icon" />
           <div className="">
-            <h3>secured booking</h3>
+            <h3>Akshay Singh</h3>
             <p>
-              Details and pricing of all secured bookings will be confirmed by
-              telephone, text or email. Bookings must be made in advance.{" "}
+              Thrifty way to get from place to place at a fair price. Clean
+              vehicles and drivers. Unlike taxis, they don’t take you “for a
+              ride” to make more money! Their routes are provided via telephone
+              navigation.
             </p>
           </div>
         </div>
         <div className="section">
           <div className="icon" />
           <div className="">
-            <h3>secured booking</h3>
+            <h3>Supreet D</h3>
             <p>
-              Details and pricing of all secured bookings will be confirmed by
-              telephone, text or email. Bookings must be made in advance.{" "}
+              I’m not huge on ride share or using anything that involves giving
+              my bank info to a company. When using GSA travels for the first
+              time I was very surprised at how competitive the prices were. The
+              drivers are cool and do there best to make sure I was comfortable.
             </p>
           </div>
         </div>
         <div className="section">
           <div className="icon" />
           <div className="">
-            <h3>secured booking</h3>
+            <h3>Anusha k</h3>
             <p>
-              Details and pricing of all secured bookings will be confirmed by
-              telephone, text or email. Bookings must be made in advance.{" "}
+              They are very convenient and easy to book.No jhanjhat whatsoever
+              and thier drivers are very polite
             </p>
           </div>
         </div>
         <div className="section">
           <div className="icon" />
           <div className="">
-            <h3>secured booking</h3>
+            <h3>Sharath M</h3>
             <p>
-              Details and pricing of all secured bookings will be confirmed by
-              telephone, text or email. Bookings must be made in advance.{" "}
+              I am overall very pleased with GSA travels. I have felt safe all
+              the time while travelling with them. Very professional and
+              friendly drivers.
             </p>
           </div>
         </div>
         <div className="section">
           <div className="icon" />
           <div className="">
-            <h3>secured booking</h3>
+            <h3>Girish G</h3>
             <p>
-              Details and pricing of all secured bookings will be confirmed by
-              telephone, text or email. Bookings must be made in advance.{" "}
+              Needed a ride to the airport, set up my ride online, got my
+              confirmation info. The driver was on time and a super-easy person
+              to converse with. He made our trip to the airport easy,
+              comfortable and very enjoyable
+            </p>
+          </div>
+        </div>
+        <div className="section">
+          <div className="icon" />
+          <div className="">
+            <h3>Veeresh K</h3>
+            <p>
+              We have used GSA travels before with excellent results. Less
+              costly than taxis and much easier to use. We also recently used
+              UBER and ola but the service at GSA RENTALS was much better than
+              taxis or car services. Clean cars that show up on time and know
+              where they are going (even when we didn't).
             </p>
           </div>
         </div>
