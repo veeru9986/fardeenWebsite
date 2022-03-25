@@ -7,21 +7,24 @@ import ReactWhatsapp from "react-whatsapp";
 const data = [
   {
     name: "Innova",
-    seats: "4 seats",
+    seats: "",
     tollFee: 0,
     basicFare: "Prices depend on distance",
+    img: "https://imgd.aeplcdn.com/1056x594/n/cw/ec/20623/innova-crysta-exterior-right-front-three-quarter.jpeg?q=75&wm=1",
   },
   {
     name: "Innova Crysta",
-    seats: "4 seats",
+    seats: "",
     tollFee: 0,
     basicFare: "Prices depend on distance",
+    img: "https://gomechanic.in/blog/wp-content/uploads/2020/05/cabImage_20180925_1d874956469.jpg",
   },
   {
     name: "Sedan",
-    seats: "4 seats",
+    seats: "",
     tollFee: 0,
     basicFare: "Prices depend on distance",
+    img: "https://imgd.aeplcdn.com/600x337/n/cw/ec/41197/hyundai-verna-right-front-three-quarter7.jpeg?q=75",
   },
 ];
 
@@ -64,7 +67,10 @@ const Wrapper = styled.div`
     .image {
       width: 100px;
       height: 70px;
-      background-color: #c4c4c4;
+      display: block;
+      img {
+        width: 100%;
+      }
     }
     .col {
       display: flex;
@@ -150,7 +156,9 @@ function BookTaxi() {
                 </Button1>
               </div>
               <div className="vechile-type">
-                <div className="image" />
+                <div className="image">
+                  <img src={d.img} alt="" />
+                </div>
                 <div className="col">
                   <h2>{d.name}</h2>
                   <h4>{d.seats}</h4>

@@ -37,6 +37,9 @@ const Nav = styled.nav`
   }
   .logo {
     z-index: 11;
+    width: 80%;
+    display: flex;
+    justify-content: center;
     img {
       width: 200px;
       @media (max-width: 479px) {

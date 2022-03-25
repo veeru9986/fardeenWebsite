@@ -15,6 +15,7 @@ const headingStyles = {
 
 const paragraphStyles = {
   marginBottom: 48,
+  letterSpacing: "0.05em",
 }
 const codeStyles = {
   color: "#8A6534",
