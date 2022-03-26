@@ -28,6 +28,7 @@ const Container1 = styled.div`
   }
   span {
     font-size: var(--h2);
+    color: var(--medGreen);
   }
 `;
 
@@ -41,14 +42,18 @@ function About({ location }) {
       </Container>
       <Container1>
         <p>
-          We at <span>GSA Travels</span> in adherence to local and federal law
-          provide fully sanitized and clean vehicles with well mannered and
-          trained chauffeur. 100% availability of taxi 24/7, On time and before
-          time service. You can rely on us without fear of missing your flight.
-          We currently provide service in Bangalore but we are aiming to expand
-          our business throughout India in the coming years. We have been
-          successfully running our business from past 8 years with 1000's of
-          happy customers.
+          We at <span>GSA Travels</span> commenced our successful business from
+          2014. Our mission is to provide our customers the best and
+          satisfactory service. We provide a happy drive to and from Airport, as
+          well as out station packages and local packages. We have a wide range
+          of vehicles and well mannered drivers. We in adherence to local and
+          federal law provide fully sanitized and clean vehicles with well
+          mannered and trained chauffeur. 100% availability of taxi 24/7, On
+          time and before time service. You can rely on us without fear of
+          missing your flight. We currently provide service in Bangalore but we
+          are aiming to expand our business throughout India in the coming
+          years. We have been successfully running our business from past 8
+          years with 1000's of happy customers.
         </p>
       </Container1>
     </Wrapper>

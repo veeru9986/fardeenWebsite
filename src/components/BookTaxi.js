@@ -6,25 +6,25 @@ import ReactWhatsapp from "react-whatsapp";
 
 const data = [
   {
-    name: "Innova",
+    name: "Sedan",
     seats: "",
     tollFee: 0,
     basicFare: "Prices depend on distance",
-    img: "https://imgd.aeplcdn.com/1056x594/n/cw/ec/20623/innova-crysta-exterior-right-front-three-quarter.jpeg?q=75&wm=1",
+    img: "https://imgd.aeplcdn.com/600x337/n/cw/ec/41197/hyundai-verna-right-front-three-quarter7.jpeg?q=75",
   },
   {
-    name: "Innova Crysta",
+    name: "Innova",
     seats: "",
     tollFee: 0,
     basicFare: "Prices depend on distance",
     img: "https://gomechanic.in/blog/wp-content/uploads/2020/05/cabImage_20180925_1d874956469.jpg",
   },
   {
-    name: "Sedan",
+    name: "Innova Crysta",
     seats: "",
     tollFee: 0,
     basicFare: "Prices depend on distance",
-    img: "https://imgd.aeplcdn.com/600x337/n/cw/ec/41197/hyundai-verna-right-front-three-quarter7.jpeg?q=75",
+    img: "https://imgd.aeplcdn.com/1056x594/n/cw/ec/20623/innova-crysta-exterior-right-front-three-quarter.jpeg?q=75&wm=1",
   },
 ];
 

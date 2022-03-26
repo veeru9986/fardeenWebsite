@@ -33,18 +33,6 @@ function WhyChooseUs() {
         <div className="section">
           <div className="icon" />
           <div className="">
-            <h3>Akshay Singh</h3>
-            <p>
-              Thrifty way to get from place to place at a fair price. Clean
-              vehicles and drivers. Unlike taxis, they don’t take you “for a
-              ride” to make more money! Their routes are provided via telephone
-              navigation.
-            </p>
-          </div>
-        </div>
-        <div className="section">
-          <div className="icon" />
-          <div className="">
             <h3>Supreet D</h3>
             <p>
               I’m not huge on ride share or using anything that involves giving
