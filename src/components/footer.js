@@ -57,7 +57,7 @@ function Footer() {
         </h4>
         <div className="contact-us">
           <h5>
-            Contact us: <span>+918123899691</span> {` `} <span>info.gsatravels@gmail.com</span>
+            Contact us: <span>+919886899691</span> {` `} <span>info.gsatravels@gmail.com</span>
           </h5>
           <div className="social-icons">
             <div className="instagram">
